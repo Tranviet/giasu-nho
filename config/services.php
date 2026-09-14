@@ -41,4 +41,9 @@ return [
         'haiku_model' => env('ANTHROPIC_HAIKU_MODEL', 'claude-3-5-haiku-20241022'),
     ],
 
+    'gemini' => [
+        'api_key' => env('GEMINI_API_KEY', env('GEMINI_KEY')),
+        'model' => env('GEMINI_MODEL', 'gemini-3.6-flash'),
+    ],
+
 ];
