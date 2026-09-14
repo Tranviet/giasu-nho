@@ -1,29 +1,68 @@
-*.log
-.DS_Store
+# ====================================================================
+# Laravel Best Practice .gitignore
+# ====================================================================
+
+# 1. Environment & Credentials
 .env
 .env.backup
 .env.production
+.env.*.local
+/auth.json
+
+# 2. Local Databases
 *.sqlite
 *.sqlite-journal
-.phpactor.json
-.phpunit.result.cache
-/.codex
-/.cursor/
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/fonts-manifest.dev.json
+
+# 3. Dependencies
+/vendor/
+/node_modules/
+
+# 4. Logs & Framework Temporary Files
+*.log
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+/storage/*.key
+/storage/pail/
+
+# 5. Public uploads & build artifacts
+/public/build/
 /public/hot
 /public/storage
-/storage/*.key
-/storage/pail
-/vendor
+/public/fonts-manifest.dev.json
+
+# 6. Testing & Quality Tools
+.phpunit.result.cache
+/.phpunit.cache/
+
+# 7. IDEs, Editors & OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+/.idea/
+/.vscode/
+/.nova/
+/.zed/
+/.codex/
 _ide_helper.php
+_ide_helper_models.php
+.phpactor.json
 Homestead.json
 Homestead.yaml
-Thumbs.db
+
+# 8. AI Tools, Agents & Assistants
+/.claude/
+/.junie/
+/.cursor/
+/.ai/
+/.agents/
+/.continue/
+/.gemini/
+/graphify-out/
+/.mcp.json
+mcp_config.json
+boost.json
+AGENTS.md
+CLAUDE.md
