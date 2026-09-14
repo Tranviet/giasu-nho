@@ -1,0 +1,132 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';
+
+@theme {
+    --font-sans: 'Nunito', 'Quicksand', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+
+    /* Custom Child-friendly Color Palette */
+    --color-child-purple-50: #FAF5FF;
+    --color-child-purple-100: #F3E8FF;
+    --color-child-purple-500: #8B5CF6;
+    --color-child-purple-600: #7C3AED;
+    --color-child-purple-700: #6D28D9;
+
+    --color-child-blue-50: #EFF6FF;
+    --color-child-blue-100: #DBEAFE;
+    --color-child-blue-500: #3B82F6;
+    --color-child-blue-600: #2563EB;
+
+    --color-child-green-50: #ECFDF5;
+    --color-child-green-100: #D1FAE5;
+    --color-child-green-500: #10B981;
+    --color-child-green-600: #059669;
+
+    --color-child-amber-50: #FFFBEB;
+    --color-child-amber-100: #FEF3C7;
+    --color-child-amber-400: #FBBF24;
+    --color-child-amber-500: #F59E0B;
+
+    --color-child-orange-50: #FFF7ED;
+    --color-child-orange-100: #FFEDD5;
+    --color-child-orange-500: #F97316;
+    --color-child-orange-600: #EA580C;
+
+    --color-child-rose-50: #FFF1F2;
+    --color-child-rose-100: #FFE4E6;
+    --color-child-rose-500: #F43F5E;
+}
+
+/* Tactile 3D Buttons for Children (Touch targets >= 56px) */
+.btn-touch-primary {
+    min-height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.12s cubic-bezier(0.34, 1.56, 0.64, 1);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-touch-primary:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-touch-pill {
+    min-height: 48px;
+    min-width: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    transition: all 0.12s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-touch-pill:active {
+    transform: scale(0.94);
+}
+
+/* Card bouncy interaction */
+.card-touch-bouncy {
+    transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.15s ease-out;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.card-touch-bouncy:active {
+    transform: scale(0.97) translateY(2px);
+}
+
+/* Animations */
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(1.5deg);
+    }
+}
+
+@keyframes starPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.35) rotate(15deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes pulseRing {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 0.4; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@keyframes speechWiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+}
+
+.animate-float {
+    animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-star-pop {
+    animation: starPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.animate-pulse-ring {
+    animation: pulseRing 3s ease-in-out infinite;
+}
+
+.animate-speech-wiggle {
+    animation: speechWiggle 3s ease-in-out infinite;
+}
