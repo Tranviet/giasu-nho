@@ -22,10 +22,12 @@
         <div class="absolute bottom-20 left-10 w-80 h-80 bg-blue-200/40 rounded-full blur-3xl"></div>
     </div>
 
+
+
     <!-- Navigation Header -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-purple-100/80 shadow-xs">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-            
+
             <!-- Logo -->
             <a href="{{ route('home') }}" class="flex items-center gap-3 group">
                 <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 via-indigo-600 to-purple-500 flex items-center justify-center text-2xl text-white shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform">
@@ -71,7 +73,7 @@
                     </form>
                 @else
                     <!-- Guest: Login and Register buttons -->
-                    <button type="button" 
+                    <button type="button"
                             id="btn-open-login-modal"
                             class="font-bold text-slate-700 hover:text-purple-600 px-3 py-2 text-sm sm:text-base transition-colors cursor-pointer">
                         Đăng nhập
@@ -83,7 +85,7 @@
                         <span>Đăng ký miễn phí</span>
                     </button>
 
-                    <a href="{{ route('child.dashboard') }}" 
+                    <a href="{{ route('child.dashboard') }}"
                        class="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-900 text-sm font-black border border-amber-200 transition-colors"
                        title="Dùng thử trực tiếp màn hình học của bé">
                         <span>🎒 Bé trải nghiệm</span>
@@ -117,10 +119,10 @@
     <section class="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-                
+
                 <!-- Left Hero Copy -->
                 <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-                    
+
                     <!-- Friendly Badge -->
                     <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 text-purple-800 text-xs sm:text-sm font-black uppercase tracking-wider mb-6 border border-purple-200">
                         <span>✨ AI Gia Sư Chuẩn GDPT 2018</span>
@@ -141,7 +143,7 @@
 
                     <!-- Hero Call to Action Buttons -->
                     <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-                        <a href="{{ route('child.dashboard') }}" 
+                        <a href="{{ route('child.dashboard') }}"
                            class="btn-touch-primary bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-300 hover:to-orange-300 text-slate-900 border-b-4 border-amber-600 w-full sm:w-auto flex items-center justify-center gap-3 text-lg sm:text-xl shadow-lg shadow-amber-500/30">
                             <span class="text-2xl">🎒</span>
                             <span>Trải nghiệm góc học của bé</span>
@@ -173,9 +175,9 @@
 
                 <!-- Right Hero Showcase Mockup -->
                 <div class="lg:col-span-5 relative flex items-center justify-center">
-                    
+
                     <div class="relative w-full max-w-md bg-white rounded-3xl p-6 shadow-2xl border-4 border-purple-200/80 rotate-1 hover:rotate-0 transition-transform duration-300">
-                        
+
                         <!-- Header of tablet simulation -->
                         <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
                             <div class="flex items-center gap-2">
@@ -237,7 +239,7 @@
     <!-- 2. CORE FEATURES SECTION -->
     <section id="features" class="py-16 bg-white/70 border-y border-purple-100/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             <div class="text-center max-w-3xl mx-auto mb-14">
                 <span class="text-xs font-black uppercase tracking-wider text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
                     Tính năng nổi bật
@@ -251,7 +253,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
+
                 <!-- Feature 1 -->
                 <div class="p-6 rounded-3xl bg-[#FCFBF7] border-2 border-purple-100 shadow-xs hover:border-purple-300 transition-all">
                     <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-3xl mb-4">
@@ -312,7 +314,7 @@
     <!-- 3. CURRICULUM SECTION -->
     <section id="curriculum" class="py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
                 <div>
                     <span class="text-xs font-black uppercase tracking-wider text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
@@ -328,7 +330,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
+
                 <!-- Math Card -->
                 <div class="bg-gradient-to-br from-blue-50 to-indigo-50/70 p-6 sm:p-8 rounded-3xl border-3 border-blue-200 shadow-md">
                     <div class="flex items-center gap-3.5 mb-4">
@@ -377,7 +379,7 @@
     <!-- 4. PRICING / PLANS SECTION -->
     <section id="pricing" class="py-16 bg-white/70 border-t border-purple-100/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
+
             <div class="text-center max-w-2xl mx-auto mb-12">
                 <span class="text-xs font-black uppercase tracking-wider text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
                     Gói cước minh bạch
@@ -396,7 +398,7 @@
                         $isPopular = $plan->code === 'basic';
                     @endphp
                     <div class="relative flex flex-col justify-between p-6 sm:p-7 rounded-3xl border-3 {{ $isPopular ? 'bg-gradient-to-b from-purple-50 to-white border-purple-400 shadow-xl shadow-purple-500/15 ring-2 ring-purple-400/30' : 'bg-white border-slate-200 shadow-sm' }}">
-                        
+
                         @if($isPopular)
                             <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white text-xs font-black uppercase tracking-wider px-3.5 py-1 rounded-full shadow-xs">
                                 Được chọn nhiều nhất ⭐
@@ -463,9 +465,9 @@
 
     <!-- Modal Backdrop -->
     <div id="auth-modal-backdrop" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
-        
+
         <div id="auth-modal-box" class="w-full max-w-md bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-purple-300 relative">
-            
+
             <!-- Close button -->
             <button type="button" id="btn-close-auth-modal" class="absolute top-4 right-4 w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 text-lg font-black flex items-center justify-center cursor-pointer">
                 ✕

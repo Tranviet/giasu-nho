@@ -27,6 +27,7 @@ Tài liệu này ghi nhận trạng thái thực tế của dự án: các bư�
   - PHP 8.3+, Laravel 11 Framework với Laravel Sanctum API token authentication.
   - Cài đặt và cấu hình thư viện `intervention/image` (v4.3, GD driver) phục vụ tối ưu hóa hình ảnh.
   - Thiết lập symlink storage: `php artisan storage:link`.
+  - Cấu hình cơ sở dữ liệu MySQL: Host `127.0.0.1`, User `root`, Pass `root`, Database `giasu`.
   - Cấu hình file `.env` và `config/services.php` cho Anthropic API (`ANTHROPIC_API_KEY`, `ANTHROPIC_MODEL`).
 - [x] **Database Migrations & Eloquent Models**:
   - Đã tạo và migrate thành công 10 thực thể:
